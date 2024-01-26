@@ -1,0 +1,37 @@
+Credenciales de la DB
+
+Nombre del servidor: davidgf
+Nom de usu admin: david
+PW: C18280501d@vid
+
+
+Examen T2 
+1.- Crear proyecto web con cualquier framework que dominen solo con la condicion
+de despliegue con Apache+PHP+MySQL
+
+2.- Tablas:
+	Plataformas: id, nombre, status
+	Juego: id, id_categoria, id_plataforma, nombre, imagen, status
+	Categorias: id, nombre
+
+3.- Revisión jueves en clase 
+
+
+
+
+##############		Tema 3		##################
+
+
+Git 
+SW de control de versiones y trabajo colaborativo 
+Podemos tener repositorios locales o remotos 
+https://git-scm.com/downloads
+Seguimos el instalador con todas las opciones por default
+
+GitHub
+	credenciales cuenta 
+Correo 	lc18280501@toluca.tecnm.mx
+Pass 	C18280501david
+User 	Davidgf27
+Ruta de Git 	https://github.com/Davidgf27/DavidGIT.git
+

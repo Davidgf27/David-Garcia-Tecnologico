@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .parrafo{
+            color: blueviolet;
+        }    
+        
+    </style>
+</head>
+<body>
+    <h1>Manejo de eventos en JQuery</h1>
+    <p>Parrafo para probar eventos</p>
+    <input type="text" id="inp">
+    <p id="p1" class="parrafo"></p>
+    <script>
+        /*
+        $(function(){
+            $("p").mouseleave(function(){
+                var texto="salida de texto del parrafo";
+                $("p1").html(texto);
+            })
+        });
+        */
+        
+        /*
+        $(function(){
+            let texto="";
+            $("p").on({
+                "click": function(){
+                    texto+="click sobre el parrafo <br>";
+                    $("p1").html(texto);
+                },
+                "mouseover": function(){
+                    texto += "ahora entro y salio el mouse sobre el parrafo <br>";
+                    $("#p1").html(texto);
+                }
+            });
+        });
+        */
+
+        $(function(){
+            let texto="";
+            $("input").change(function(){
+                var e = $("input").val();
+                texto = "ahora el input ha cambiado su contenido por " + e;
+                $("#p1").html(texto).toogleClass("parrafo");
+            });
+        });
+    </script>
+</body>
+</html>

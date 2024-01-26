@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid{
+            border: red dashed 1px;
+        }
+        input:valid{
+            border: green solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario" action="respuesta.html" onsubmit="return validaForm()" method="post">
+        <label for="nombre">Escribe tu nombre: </label>
+        <input type="text" id="nombre"><br>
+        <button type="submit">Guardar</button>
+        <p id="msj"></p>
+    </form>
+    
+    <script>
+        function validaForm(){
+            let nombre = document.forms["formulario"]["nombre"].value;
+            let n = document.forms["formulario"]["nombre"].id;
+
+            if(nombre.length<8){
+                document.getElementById(n).style.border="2px solid red";
+                document.getElementById(n).style.background = "yellow";
+                document.getElementById(n).value="";
+                document.getElementById("msj").style.color="red";
+                document.getElementById("msj").innerHTML = "No se admiten menos de 8 caracteres"
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

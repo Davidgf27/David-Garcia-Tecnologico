@@ -1,0 +1,34 @@
+body{
+    box-sizing: border-box;
+}
+
+pre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    width: 200px;
+    margin: auto;
+}
+
+.externo:first-child, .externo:last-child{
+    background-color: pink;
+}
+
+li:nth-child(odd){
+    background-color: aqua;
+}
+
+li:nth-child(even){
+    background-color: blanchedalmond;
+}
+
+li:nth-child(5){
+    background-color: gold;
+}
+
+#rebelde{
+    background-color: aquamarine;
+}
+
+

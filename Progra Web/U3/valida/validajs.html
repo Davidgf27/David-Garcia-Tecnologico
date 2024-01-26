@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid{
+            border: red dashed 1px;
+        }
+        input:valid{
+            border: green solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="correo">Escribe tu correo electronico: </label>
+        <input type="email" id="correo" name="correo">
+        <button>Guardar</button>
+    </form>
+    
+    <script>
+        const correo = document.getElementById("correo");
+        correo.addEventListener('input', function(e){
+            if (correo.validity.typeMismatch){
+                correo.setCustomValidity("Esa no es una direccion de correo electronico");
+            }else{
+                correo.setCustomValidity("");
+            }
+        });
+    </script>
+</body>
+</html>

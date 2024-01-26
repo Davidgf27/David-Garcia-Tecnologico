@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper@1.16.1/dist/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap 4 container</title>
+    <style>
+        .row div{
+            border: 1px solid darkgray;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="container">       NO OCUPA TODO EL ANCHO DE LA PANTALLA-->
+    <div class="container-fluid"> <!--OCUPA TODO EL ANCHO DE LA PANTALLA -->
+        <h3>Columna básica</h3>
+        <div class="row">
+            <div class="col">
+                <p class="alert-info">David (alert-info)</p>
+                <p class="text-danger">David (text-danger)</p>
+                <p class="alert-success">David (alert-success)</p>
+                <p class="text-primary">David (text-primary)</p>
+            </div>
+            <!-- EL PARRAFO DENTRO DE CLASS COL SOLO ES PARA CAMBIAR EL TIPO DE COLOR DEL TEXTO-->
+            <!-- DENTRO DE LOS PARRAFOS SI COLOCAS "TEXT" LO QUE CAMBIARA DE COLOR ES EL TEXTO-->
+            <!-- EN CAMBIO SI COLOCAS LA "ALERT" SE COLOREARA EL RENGLON DONDE ESTA ESE PARRAFO-->
+        </div>
+    </div>
+</body>
+</html>
